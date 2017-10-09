@@ -1,0 +1,74 @@
+$tableWidth : 800px;
+$borderWidth : 1px;
+$color: (
+    prim : #000
+);
+@mixin centre() {
+    margin-right: auto;
+    margin-left: auto;
+}
+.sl-fix{
+        width: $tableWidth;
+        border: 5px double map-get($color,prim);
+        @include centre();
+}
+.tr{
+    float: right;
+}
+.ac{
+    display: inline-block;
+    @include centre();
+}
+.mb-1{
+    margin-bottom: .5rem;
+}
+.mb-2{
+    margin-bottom: 1rem;
+}
+.mt-1{
+    margin-top: .5rem;
+}
+.tc{ text-align: center;}
+.t1{
+    border-collapse: collapse;
+    margin-left: -$borderWidth; 
+    margin-right: -$borderWidth;
+    width: $tableWidth + 2*$borderWidth;
+    td,th{
+        padding: 0.5rem;
+        border: 1px solid  map-get($color,prim);
+    }
+    th{font-weight: 700}
+}
+.ha{
+    width: 50%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+}
+.col    {
+    padding: 0.5rem;
+    overflow: auto;
+    .ha{
+        padding: .5rem;
+    }
+    >.fe{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
+.fe{
+    +.fe{
+        padding-top: 0.5rem;
+    }
+    input{
+        float: right;
+    }
+}
+hr{
+    border: .5px solid map-get($color,prim);
+}
+.fu{
+    float: none;
+    width: 80%;
+}
