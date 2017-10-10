@@ -7,6 +7,11 @@ $color: (
     margin-right: auto;
     margin-left: auto;
 }
+@mixin inp(){
+    border: 0px;
+    padding-left: 1rem;
+    flex: 1;
+}
 .sl-fix{
         width: $tableWidth;
         border: 5px double map-get($color,prim);
@@ -39,22 +44,43 @@ $color: (
         border: 1px solid  map-get($color,prim);
     }
     th{font-weight: 700}
+    td{ 
+        padding: 0px;
+        input.bh,select{
+            width: 100%;
+            box-sizing: border-box;
+            @include inp();
+        }
+    }
 }
-.ha{
-    width: 50%;
+.ha,.fa{
     display: block;
     float: left;
     box-sizing: border-box;
+    .fe{
+        display: flex;
+        label,input{
+            display: flex;
+        }
+        input{  
+            border: 0px;
+            border-bottom: 1px solid map-get($color,prim);
+            padding-left: 1rem;
+            flex: 1;
+        }
+    }
 }
-.col    {
+.ha{
+    width: 50%;
+}
+.fa{
+    width: 100%;
+}
+.col {
     padding: 0.5rem;
     overflow: auto;
     .ha{
         padding: .5rem;
-    }
-    >.fe{
-        margin-left: .5rem;
-        margin-right: .5rem;
     }
 }
 .fe{
@@ -71,4 +97,16 @@ hr{
 .fu{
     float: none;
     width: 80%;
+}
+.fc{
+ display: flex;
+}
+.fi{
+    @include inp();
+    border-bottom: 1px solid map-get($color,prim);
+}
+.tp{
+    td{
+        padding: 0.5rem;
+    }
 }

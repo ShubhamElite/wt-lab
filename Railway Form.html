@@ -11,12 +11,12 @@
     <div class="col">
       <div class="tc">                             
           <div class="ac">....................... RAILWAY</div>
-          <div class="tr">CM257</div>
+          <div class="tr" style="padding-right:2rem">CM257</div>
           <div class="mt-1">RESERVATION/CANCELLATION REQUISITION FORM</div>
         </div>
     </div>
   <div align="tc">
-    <table class="t1">
+    <table class="t1 tp">
         <tbody>
           <tr>
             <td>If you are a Medical Practitioner Please tick ( ) in Box
@@ -101,46 +101,76 @@
       </tr>
       <tr>
         <td>1.</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><input  type="text" class="bh" />  </td>
+        <td>
+          <select name="sex">
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select>
+        </td>
+        <td><input  type="number" value="20" max="110" class="bh" /></td>
+        <td><input  type="text" class="bh" /></td>
         <td rowspan="6" >Lower/Upper berth<br>Veg./Non-veg. Meal for Rajdhani/ Shatabdi Express Only</td>
       </tr>
     <tr>
       <td>2.</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><input  type="text" class="bh" />  </td>
+      <td>
+        <select name="sex">
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select>
+      </td>
+      <td><input  type="number" value="20" max="110" class="bh" /></td>
+      <td><input  type="text" class="bh" /></td>
     </tr>
     <tr>
       <td>3.</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><input  type="text" class="bh" />  </td>
+      <td>
+        <select name="sex">
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select>
+      </td>
+      <td><input  type="number" value="20" max="110" class="bh" /></td>
+      <td><input  type="text" class="bh" /></td>
     </tr>
     <tr>
       <td>4.</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><input  type="text" class="bh" />  </td>
+      <td>
+        <select name="sex">
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select>
+      </td>
+      <td><input  type="number" value="20" max="110" class="bh" /></td>
+      <td><input  type="text" class="bh" /></td>
     </tr>
     <tr>
       <td>5.</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><input  type="text" class="bh" />  </td>
+      <td>
+        <select name="sex">
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select>
+      </td>
+      <td><input  type="number" value="20" max="110" class="bh" /></td>
+      <td><input  type="text" class="bh" /></td>
     </tr>
     <tr>
       <td>6.</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><input  type="text" class="bh" />  </td>
+      <td>
+        <select name="sex">
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select>
+      </td>
+      <td><input  type="number" value="20" max="110" class="bh" /></td>
+      <td><input  type="text" class="bh" /></td>
     </tr>
     </tbody></table>
   </div>
@@ -155,15 +185,25 @@
           </tr>
           <tr>
             <td>1.</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><input  type="text" class="bh" />  </td>
+            <td>
+              <select name="sex">
+                <option value="M">M</option>
+                <option value="F">F</option>
+              </select>
+            </td>
+            <td><input  type="number" value="2" max="6" class="bh" /></td>
           </tr>
         <tr>
           <td>2.</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><input  type="text" class="bh" />  </td>
+          <td>
+            <select name="sex">
+              <option value="M">M</option>
+              <option value="F">F</option>
+            </select>
+          </td>
+          <td><input  type="number" value="2" max="6" class="bh" /></td>
         </tr>
      </tbody>
     </table>
@@ -173,7 +213,7 @@
         <div class="ha">
             <div class="fe">
               <label for="">Train No &amp; Name</label>
-              <input type="text">
+              <input type="text" class="l">
             </div>
             <div class="fe">
               <label for="">From</label>
@@ -190,27 +230,28 @@
               <input type="text">
             </div>
         </div>
-        
-        <div class="fe">
-            <label for="">Name of applicant </label>
-            <input type="text" class="fu">
-        </div>
-        <div class="fe">
-            <label for="">Full address </label>
-            <input type="text" class="fu">
+        <div class="fa">
+          <div class="fe">
+              <label for="">Name of applicant </label>
+              <input type="text" class="fu">
+          </div>
+          <div class="fe">
+              <label for="">Full address </label>
+              <input type="text" class="fu">
+          </div>
         </div>
       </div>
     </div>
     <hr />
     <div class="col">
       <p class="tc"><b>Signature of the Applicant/Representative</b></p>
-      <div class="mb-2">Telephone No., if any ______________________________ Date ____________________Time ____________________</div>
+      <div class="mb-2 fc">Telephone No., if any <input type="text" class="fi"> Date <input type="text" class="fi"> Time <input type="time" class="fi"></div>
     </div>
     <hr />
     <div class="col">
       <p class="tc"><b><u>FOR OFFICE USE ONLY</u></b></p>
-      <div>S.No. of Requistion_____________________________________ PNR No._____________________________________<br>
-      Berth/Seat No._______________ Amount collected ______________________________________________________</div>
+      <div class="fc">S.No. of Requistion <input type="text" class="fi"> PNR No.<input type="text" class="fi"></div>
+      <div class="fc">Berth/Seat No.<input type="text" class="fi"> Amount collected <input type="text" class="fi"></div>
     </div>
     <hr>
     <div class="col mb-2">
